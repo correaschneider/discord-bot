@@ -1,0 +1,11 @@
+services:
+
+  bot:
+    image: bot
+    build: .
+    ports:
+      - "3000:3000"
+    environment:
+      - DISCORD_TOKEN=${DISCORD_TOKEN}
+    volumes:
+      - ./:/bot
