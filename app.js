@@ -52,6 +52,13 @@ app.post('/interactions', async function (req, res) {
   }
 });
 
+/**
+ * Interactions endpoint URL where Discord will send HTTP requests
+ */
+app.get('/status', async function (req, res) {
+  res.send('OK');
+});
+
 app.listen(PORT, () => {
   console.log('Listening on port', PORT);
 });
