@@ -6,7 +6,10 @@ services:
     ports:
       - "3000:3000"
     environment:
+      - PORT=${PORT}
       - DISCORD_TOKEN=${DISCORD_TOKEN}
+      - DISCORD_PREFIX_COMMAND=${DISCORD_PREFIX_COMMAND}
+      - DISCORD_PUBLIC_KEY=${DISCORD_PUBLIC_KEY}
     command: tail -f /dev/null
     volumes:
       - ./:/bot

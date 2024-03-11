@@ -2,15 +2,23 @@
   "name": "bot",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "app.js",
+  "type": "module",
+  "engines": {
+    "node": "20.x"
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node app.js",
+    "register": "node commands.js",
+    "dev": "nodemon app.js"
   },
   "keywords": [],
   "author": "Pedro Schneider <correaschneider@gmail.com>",
   "license": "ISC",
   "dependencies": {
-    "discord.js": "^14.14.1",
-    "dotenv": "^16.4.5"
+    "discord-interactions": "^3.4.0",
+    "dotenv": "^16.4.5",
+    "express": "^4.18.3",
+    "node-fetch": "^3.3.2"
   }
 }
