@@ -4,4 +4,4 @@ RUN npm install -g npm@latest
 
 WORKDIR /bot
 
-CMD [ "tail", "-f", "/dev/null" ]
+CMD [ "node", "index.js" ]

@@ -7,5 +7,6 @@ services:
       - "3000:3000"
     environment:
       - DISCORD_TOKEN=${DISCORD_TOKEN}
+    command: tail -f /dev/null
     volumes:
       - ./:/bot
